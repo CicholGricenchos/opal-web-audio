@@ -5,17 +5,17 @@ module WebAudio
 
     #https://developer.mozilla.org/en-US/docs/Web/API/AudioContext
 
-    def initialize
-      super `new window.AudioContext`
-    end
-
-    def self.const_missing name
-      WebAudio.const_get name
+    def initialize native = nil
+      if native
+        super native
+      else
+        super `new window.AudioContext`
+      end
     end
 
     camel_alias :currentTime
-    camel_alias :destination
-    camel_alias :listener
+    camel_alias :destination,                  as: AudioDestinationNode
+    camel_alias :listener,                     as: AudioListener
     camel_alias :sampleRate
     camel_alias :state
 

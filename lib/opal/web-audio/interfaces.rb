@@ -1,0 +1,33 @@
+require 'native'
+
+require_relative 'native_helpers'
+require_relative 'interfaces/audio_param'
+require_relative 'interfaces/audio_node'
+require_relative 'interfaces/analyser_node'
+require_relative 'interfaces/audio_buffer'
+require_relative 'interfaces/audio_buffer_source_node'
+require_relative 'interfaces/audio_destination_node'
+require_relative 'interfaces/audio_listener'
+require_relative 'interfaces/media_element_audio_source_node'
+require_relative 'interfaces/media_stream_audio_source_node'
+require_relative 'interfaces/media_stream_audio_destination_node'
+require_relative 'interfaces/script_processor_node'
+require_relative 'interfaces/stereo_panner_node'
+require_relative 'interfaces/analyser_node'
+require_relative 'interfaces/biquad_filter_node'
+require_relative 'interfaces/channel_merger_node'
+require_relative 'interfaces/channel_splitter_node'
+require_relative 'interfaces/convolver_node'
+require_relative 'interfaces/delay_node'
+require_relative 'interfaces/dynamics_compressor_node'
+require_relative 'interfaces/gain_node'
+require_relative 'interfaces/iir_filter_node'
+require_relative 'interfaces/oscillator_node'
+require_relative 'interfaces/panner_node'
+require_relative 'interfaces/periodic_wave'
+require_relative 'interfaces/wave_sharper_node'
+require_relative 'interfaces/audio_context'
+
+module WebAudio
+
+end

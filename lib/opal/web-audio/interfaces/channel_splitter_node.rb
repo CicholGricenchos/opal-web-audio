@@ -1,5 +1,5 @@
 module WebAudio
-  class GainNode
+  class ChannelSplitterNode < AudioNode
     include Native
   end
 end

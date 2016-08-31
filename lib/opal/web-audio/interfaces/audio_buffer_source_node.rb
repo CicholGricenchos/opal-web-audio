@@ -5,12 +5,12 @@ module WebAudio
 
     #https://developer.mozilla.org/en-US/docs/Web/API/AudioBufferSourceNode
 
-    camel_accessor :buffer, as: AudioBuffer
-    camel_accessor :detune, as: AudioParam
+    camel_reader :buffer, as: AudioBuffer
+    camel_reader :detune, as: AudioParam
     camel_accessor :loop
     camel_accessor :loopStart
     camel_accessor :loopEnd
-    camel_accessor :playbackRate, as: AudioParam
+    camel_reader :playbackRate, as: AudioParam
 
     camel_accessor :onended
 

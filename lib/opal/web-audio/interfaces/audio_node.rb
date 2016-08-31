@@ -5,7 +5,11 @@ module WebAudio
 
     #https://developer.mozilla.org/en-US/docs/Web/API/AudioNode
 
-    camel_reader :context
+    #camel_reader :context, as: :AudioContext
+    def context
+        AudioContext.new(`#@native.context`)
+    end
+
     camel_reader :numberOfInputs
     camel_reader :numberOfOutputs
     camel_accessor :channelCount

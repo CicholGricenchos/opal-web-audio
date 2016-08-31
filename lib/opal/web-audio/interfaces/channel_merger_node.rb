@@ -1,5 +1,5 @@
 module WebAudio
-  class WaveSharperNode
+  class ChannelMergerNode < AudioNode
     include Native
   end
 end
